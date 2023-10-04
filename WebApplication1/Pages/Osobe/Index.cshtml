@@ -1,0 +1,41 @@
+﻿@page                                                                                     
+@model WebApplication1.Pages.Osobe.IndexModel
+@{
+}
+
+<br>
+<h2>Osobe</h2>                                                                              
+<a class='btn btn-primary btn-sm' href='/Osobe/Create'>Nova Osoba</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ime</th>
+            <th>Prezime</th> 
+            <th>Telefon</th>
+            <th>Email</th>
+            <th>Spol</th>
+        </tr>
+    </thead>
+    <tbody>
+     
+
+        @foreach(var item in Model.ListOsobe)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Ime</td>
+                <td>@item.Prezime</td>
+                <td>@item.Telefon</td>
+                <td>@item.Email</td>
+                <td>@item.Spol</td>
+               <td>
+                   <a class="btn btn-primary btn-sm" href="/Osobe/Edit?Id=@item.Id">Uredi</a>
+                   <a class="btn btn-danger btn-sm" href="/Osobe/Delete?Id=@item.Id">Izbriši</a>
+               </td>
+                   
+            </tr>
+        }
+
+    </tbody>
+    </table>
