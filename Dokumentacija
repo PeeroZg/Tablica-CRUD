@@ -1,0 +1,11 @@
+Ova tablica je jednostavna baza podataka dizajnirana za osnovne CRUD operacije (Create, Read, Update, Delete). Izrađena je pomoću razvojnog okvira Visual Studio koristeći programski jezik C#.
+Za pohranu podataka koristi se Microsoft SQL Server, a administracija i upravljanje tablicom izvršava se putem SQL Server Management Studio (SSMS). Ovdje su glavne značajke i operacije tablice:
+
+Struktura tablice: Tablica ima definirane stupce koji omogućuju pohranu određenih vrsta podataka. Ovi stupci uključuju - Ime, Prezime, Telefon, Email i Spol.
+
+Operacije:
+
+Dodavanje (Create)
+Čitanje (Read)
+Ažuriranje (Update)
+Brisanje (Delete)
